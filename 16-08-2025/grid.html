@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Day 1: Buttons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- Bootstrap divides your screen into 12 slices (like a pizza).
+
+    If you take 6 slices → that’s half the pizza (50%).
+
+    If you take 3 slices → that’s one-quarter (25%).
+
+    If you take all 12 slices → that’s full width (100%).
+
+👉 This is the 12-column grid system in Bootstrap. -->
+
+
+    <!-- 
+1. <div class="container mt-4">
+
+container → A fixed-width wrapper that keeps your content aligned in the center (Bootstrap has container and container-fluid → fluid takes full width).
+
+mt-4 → margin-top spacing (4 units). It pushes the content down a little.
+
+2. <div class="row">
+
+row → A horizontal group of columns.
+
+Think of it as a row in a table that will hold columns.
+
+3. <div class="col"> ... </div>
+
+col → A column inside the row.
+
+If you don’t specify size, Bootstrap will automatically divide space equally between columns.
+
+Here, 2 columns → each takes 50% width.
+
+If you had 3 columns, each would take 33% width automatically.
+
+4. Styling Helpers
+
+bg-light → light gray background color.
+
+p-3 → padding (space inside the column).
+
+border → adds a border around the column.
+    -->
+
+
+    <h1 class="text-center fw-bold ">Grid</h1><br>
+
+    <h2 class="text-center">Two Equal Columns (50% + 50%)</h2>
+    <div class="container mt-4">
+    <div class="row">
+        <div class="col bg-light p-3 border">Column 1</div>
+        <div class="col bg-light p-3 border">Column 2</div>
+    </div>
+    </div><br>
+
+        <h2 class="text-center">Three Equal Columns (33% each)</h2>
+    <div class="container">
+    <div class="row">
+        <div class="col  bg-light p-3 border">Col 1</div>
+        <div class="col  bg-light p-3 border">Col 2</div>
+        <div class="col  bg-light p-3 border">Col 3</div>
+    </div>
+    </div><br>
+
+ <h2 class="text-center">Unequal Columns (25% + 75%)</h2>
+<div class="row">
+  <div class="col-3 bg-light border">25%</div>
+  <div class="col-9 bg-light border">75%</div>
+</div>
+
+
+
+    
+    
+  </body>
+</html>
